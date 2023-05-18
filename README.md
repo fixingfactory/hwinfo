@@ -15,7 +15,8 @@ Get Laptop Hardware Information
 It will ouput something similar the screenshot below:
 ![image](https://github.com/fixingfactory/hwinfo/assets/1253988/8b859d24-823c-4bc1-9c58-6972fdd36911)
 
-```bash
+```
+C:\Users\nis\hwinfowin.bat
 +--------------+
 | Laptop Model |
 +--------------+
