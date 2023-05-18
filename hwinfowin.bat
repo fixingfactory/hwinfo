@@ -31,9 +31,9 @@ echo +-------------+
 echo ^| Laptop BIOS ^|
 echo +-------------+
 wmic bios get smbiosbiosversion
-echo +------------------+
+echo +-------------------+
 echo ^| Laptop Approx Age^|
-echo +------------------+
+echo +-------------------+
 echo.
 @echo off
 setlocal enabledelayedexpansion
