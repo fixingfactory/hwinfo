@@ -3,14 +3,13 @@ Get Laptop Hardware Information
 
 ## Windows
 
-1. Open a Windows Command Prompt
-2. Run the following command:
-`curl -O https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat`
-3. if curl is not available, goto https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat
-4. Copy the contents of https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat
-5. Open Notepad and paste the contents into the empty file
-6. Save the file as `hwinfowin.bat` in the same directory that Command Prompt has opened
-7. Run the `hwinfowin.bat`
+* Open a Windows Command Prompt
+* Run the following command: curl -O https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat
+* If curl is not available, go to https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat
+* Copy the contents of https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat
+* Open Notepad and paste the contents into the empty file
+* Save the file as hwinfowin.bat in the same directory that Command Prompt has opened
+* Run the hwinfowin.bat file
 
 It will ouput something similar the screenshot below:
 ![image](https://github.com/fixingfactory/hwinfo/assets/1253988/8b859d24-823c-4bc1-9c58-6972fdd36911)
