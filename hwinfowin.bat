@@ -32,7 +32,7 @@ echo ^| Laptop BIOS ^|
 echo +-------------+
 wmic bios get smbiosbiosversion
 echo +-------------------+
-echo ^| Laptop Approx Age^|
+echo ^| Laptop Approx Age ^|
 echo +-------------------+
 echo.
 @echo off
