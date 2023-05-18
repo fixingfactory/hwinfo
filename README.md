@@ -13,7 +13,12 @@ Open a Windows Command Prompt
 * Run the `hwinfowin.bat` file
 
 It will ouput something similar the screenshot below:
-![image](https://github.com/fixingfactory/hwinfo/assets/1253988/8b859d24-823c-4bc1-9c58-6972fdd36911)
+
+![image](https://github.com/fixingfactory/hwinfo/assets/1253988/8b859d24-823c-4bc1-9c5![hwinfowin]
+
+![hwinfowin](https://github.com/fixingfactory/hwinfo/assets/1253988/cc173f6a-fd53-480c-8b54-669c661f3b24)
+
+
 
 ```
 C:\Users\nis\hwinfowin.bat
