@@ -35,7 +35,6 @@ echo +-------------------+
 echo ^| Laptop Approx Age ^|
 echo +-------------------+
 echo.
-@echo off
 setlocal enabledelayedexpansion
 
 for /f "skip=1 tokens=2 delims==" %%G in ('wmic bios get releasedate /format:list') do (
@@ -44,6 +43,11 @@ for /f "skip=1 tokens=2 delims==" %%G in ('wmic bios get releasedate /format:lis
 )
 
 :next
+if not defined releasedate (
+    echo Release date not found.
+    goto :end
+)
+
 echo BIOS Release Date: %releasedate%
 
 REM Extract year, month, and day from the release date
@@ -67,6 +71,7 @@ if %currentmonth% equ %month% (
 
 echo Approximate Laptop Age: %age% years
 
+:end
 endlocal
 echo.
 echo +------------+
