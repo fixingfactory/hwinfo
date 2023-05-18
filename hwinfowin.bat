@@ -43,35 +43,34 @@ for /f "skip=1 tokens=2 delims==" %%G in ('wmic bios get releasedate /format:lis
 )
 
 :next
-if not defined releasedate (
-    echo Release date not found.
-    goto :end
+if "%releasedate%"=="" (
+    echo Release date is not available.
+) else (
+    echo BIOS Release Date: %releasedate%
+
+    REM Extract year, month, and day from the release date
+    set "year=!releasedate:~0,4!"
+    set "month=!releasedate:~4,2!"
+    set "day=!releasedate:~6,2!"
+
+    REM Get the current date
+    for /f "tokens=1-3 delims=/." %%A in ("%date%") do (
+        set "currentyear=%%C"
+        set "currentmonth=%%A"
+        set "currentday=%%B"
+    )
+
+    REM Calculate the approximate age if release date is not empty
+    if not "!year!!month!!day!"=="" (
+        set /a "age=currentyear-year"
+        if !currentmonth! lss !month! set /a "age-=1"
+        if !currentmonth! equ !month! (
+            if !currentday! lss !day! set /a "age-=1"
+        )
+        echo Approximate Laptop Age: !age! years
+    )
 )
 
-echo BIOS Release Date: %releasedate%
-
-REM Extract year, month, and day from the release date
-set "year=%releasedate:~0,4%"
-set "month=%releasedate:~4,2%"
-set "day=%releasedate:~6,2%"
-
-REM Get the current date
-for /f "tokens=1-3 delims=/." %%A in ("%date%") do (
-    set "currentyear=%%C"
-    set "currentmonth=%%A"
-    set "currentday=%%B"
-)
-
-REM Calculate the approximate age
-set /a "age=currentyear-year"
-if %currentmonth% lss %month% set /a "age-=1"
-if %currentmonth% equ %month% (
-    if %currentday% lss %day% set /a "age-=1"
-)
-
-echo Approximate Laptop Age: %age% years
-
-:end
 endlocal
 echo.
 echo +------------+
