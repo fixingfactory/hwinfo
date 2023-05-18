@@ -1,3 +1,9 @@
+<!-- Include clipboard.js stylesheet -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.css">
+
+<!-- Include clipboard.js script -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
+
 # hwinfo
 Get Laptop Hardware Information
 
