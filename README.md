@@ -1,9 +1,3 @@
-<!-- Include clipboard.js stylesheet -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.css">
-
-<!-- Include clipboard.js script -->
-<script src="https://cdn.jsdelivr.net/npm/clipboard@latest/dist/clipboard.min.js"></script>
-
 # hwinfo
 Get Laptop Hardware Information
 
@@ -11,7 +5,7 @@ Get Laptop Hardware Information
 
 Open a Windows Command Prompt
 * Run the following command:
-	* `curl -O https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat`
+	* <pre><code id="curl">curl -O https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat</code></pre>
 		* If curl is not available, go to https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat
 		* Copy the contents of https://raw.githubusercontent.com/fixingfactory/hwinfo/main/hwinfowin.bat
 		* Open Notepad and paste the contents into the empty file
