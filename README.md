@@ -14,7 +14,7 @@ Open a Windows Command Prompt
 
 It will ouput something similar the screenshot below:
 
-![image](https://github.com/fixingfactory/hwinfo/assets/1253988/8b859d24-823c-4bc1-9c5![hwinfowin]
+![hwinfowin](https://github.com/fixingfactory/hwinfo/assets/1253988/ac112301-21c2-441a-9d9e-4ac40b5ab355)
 
 ![hwinfowin](https://github.com/fixingfactory/hwinfo/assets/1253988/cc173f6a-fd53-480c-8b54-669c661f3b24)
 
